@@ -289,7 +289,8 @@ a,
   /* Chrome10+,Safari5.1+ */
   /* Opera 11.10+ */
   /* IE10+ */
-  background: linear-gradient(to bottom, rgba(40, 115, 113, 0.57) 25%, rgba(115, 54, 31, 0.67) 75%);
+  /* background: linear-gradient(to bottom, rgba(40, 115, 113, 0.57) 25%, rgba(115, 54, 31, 0.67) 75%); */
+  background: linear-gradient(to bottom, rgba(40, 115, 113, 0.30) 25%, rgb(123, 44, 191, 0.30) 75%);
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#000000',GradientType=0 );
   /* IE6-8 */
@@ -1177,7 +1178,7 @@ General Styles - Owlcarousel
 --------------------------------------------------------------*/
 .page-loader {
   position: fixed;
-  background: rgb(153, 64, 134);
+  background: rgb(29, 31, 32);
   bottom: 0;
   right: 0;
   left: 0;
@@ -1185,61 +1186,60 @@ General Styles - Owlcarousel
   z-index: 9998;
 }
 
-.loader {
+.heart {
   position: absolute;
-  border-left: 2px solid #ffffff;
-  border-top: 2px solid rgba(255, 255, 255, 0.2);
-  border-right: 2px solid rgba(255, 255, 255, 0.2);
-  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-  height: 46px;
-  width: 46px;
-  left: 50%;
-  top: 50%;
-  margin: -23px 0 0 -23px;
-  text-indent: -9999em;
-  font-size: 10px;
-  z-index: 9999;
-  -webkit-animation: load 0.8s infinite linear;
-  -moz-animation: load 0.8s infinite linear;
-  ms-animation: load 0.8s infinite linear;
-  o-animation: load 0.8s infinite linear;
-  animation: load 0.8s infinite linear;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(123, 44, 191);
+  height: 100px;
+  width: 100px;
+  transform: rotate(-45deg);
+  animation-name: beat;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
 }
 
-.loader,
-.loader:after {
+.heart:after {
+  background-color: rgb(123, 44, 191);
+  content: "";
   border-radius: 50%;
-  width: 46px;
-  height: 46px;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 0px;
+  left: 50px;
 }
 
-@-webkit-keyframes load {
+.heart:before {
+  background-color: rgb(123, 44, 191);
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: -50px;
+  left: 0px;
+}
+
+@keyframes beat {
   0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+    transform: scale(1) rotate(-45deg);
   }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+  50% {
+    transform: scale(0.6) rotate(-45deg);
   }
 }
 
-@keyframes load {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
 
 /*--------------------------------------------------------------
 	Navbar
 --------------------------------------------------------------*/
 .navbar-custom {
-  background-color: rgba(10, 10, 10, 0.9);
+ /* background-color: rgb(193, 158, 224);*/
+  background-color: rgb(123, 44, 191);
   border: 0;
   border-radius: 0;
   z-index: 1000;
