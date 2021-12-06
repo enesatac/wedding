@@ -163,7 +163,7 @@ a,
 .module,
 .module-small {
   position: relative;
-  padding: 140px 0;
+  padding: 50px 0;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -571,22 +571,22 @@ a,
 }
 
 .scroll-up a {
-  background: #fff;
+  background: rgb(123, 44, 191);
   display: block;
   height: 28px;
   width: 28px;
   text-align: center;
   line-height: 28px;
   font-size: 14px;
-  color: #000;
+  color: #fff;
   opacity: 0.6;
-  border-radius: 2px;
+  border-radius: 14px;
 }
 
 .scroll-up a:hover,
 .scroll-up a:active {
   opacity: 1;
-  color: #000;
+  color: #fff;
 }
 
 /* Video */
@@ -921,7 +921,7 @@ blockquote {
   text-align: center;
   font-size: 16px;
   color: #111;
-  margin-bottom: 70px;
+  margin-bottom: 30px;
 }
 
 .module-icon {
@@ -1981,8 +1981,9 @@ Google map
 }
 
 .works-grid.works-hover-g .work-item:hover .work-image:after {
-  background: #6fe29e;
-  background: linear-gradient(135deg, rgba(111, 226, 158, 0.8) 0%, rgba(91, 218, 209, 0.8) 100%);
+  background: #000000;
+  background: linear-gradient(to bottom, rgba(40, 115, 113, 0.30) 25%, rgb(123, 44, 191, 0.30) 75%);
+  /* background: linear-gradient(135deg, rgba(111, 226, 158, 0.8) 0%, rgba(91, 218, 209, 0.8) 100%); */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6fe29e', endColorstr='#5bdad1',GradientType=1 );
   opacity: 1;
 }

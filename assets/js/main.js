@@ -256,6 +256,20 @@ console.log('%c Developed by best couple. Ceren & Enes', 'background: #222; colo
             }
         });
 
+        $(".work-item").magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            gallery: {
+                enabled: true,
+                navigateByImgClick: true,
+                preload: [0,1]
+            },
+            image: {
+                titleSrc: 'title',
+                tError: 'The image could not be loaded.'
+            }
+        });
+
 
         /* ---------------------------------------------- /*
          * Portfolio
