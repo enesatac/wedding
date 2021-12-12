@@ -1,3 +1,26 @@
+/***** Menu and logo for responsive *****/
+
+@media (min-width: 768px) and (max-width: 992px) {
+	.wedding-logo{
+		width: 100%;
+	}
+
+	.navbar-header {
+		width: 25%;
+	}
+}
+
+
+/***** Name image in homepage *****/
+
+.name-image {
+	position: relative;
+    bottom: 15%;
+}
+
+
+/***** Arrows *****/
+
 .arrows {
 	width: 60px;
 	height: 72px;
@@ -46,14 +69,7 @@
 	-webkit-animation-delay:0s; /* Safari 和 Chrome */
 }
 
-.snowflake {
-	position: absolute;
-	width: 10px;
-	height: 10px;
-	background: linear-gradient(white, white);
-	border-radius: 50%;
-	filter: drop-shadow(0 0 10px white);
-}
+/***** Scroll *****/
 
 /* width */
 ::-webkit-scrollbar {
@@ -82,3 +98,78 @@
 	background-color: rgb(193, 158, 224);
 }
 
+/***** Countdown *****/
+
+.countdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.timer {
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	position: relative;
+	top: 22%;
+}
+
+.timer div {
+	display: inline-block;
+	width: 130px;
+    height: 130px;
+    border-radius: 4px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 50px -10px #000;
+	font-size: 45px;
+    font-weight: 700;
+	margin: 15px;    
+}
+
+.timer div span {
+	font-family: 'Montserrat', sans-serif;
+	display: block;
+	font-size: 25px;
+	font-weight: 700;
+}
+  
+@media screen and (max-width: 650px) {
+	.timer div {
+		width: 80px;
+    	height: 80px;
+		margin: 5px;   
+		font-size: 27px;
+	}
+
+	.timer div span {
+		font-size: 15px;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	.timer div {
+		width: 60px;
+    	height: 60px;
+		margin: 5px;   
+		font-size: 20px;
+	}
+
+	.timer div span {
+		font-size: 13px;
+	}
+}
+
+@media screen and (max-height: 720px) {
+	.timer {
+		top: 25%;
+	}
+
+	.name-image {
+		bottom: 10%;
+	}
+}
