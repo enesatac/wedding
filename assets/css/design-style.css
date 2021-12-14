@@ -173,3 +173,25 @@
 		bottom: 10%;
 	}
 }
+
+/* Google forms */ 
+
+.musicForm {
+	padding: 0;
+	height: 500px;
+}
+
+.contestForm {
+	padding: 0;
+	height: 700px;
+}
+
+@media screen and (max-width: 1200px) {
+	.musicForm {
+		height: 700px;
+	}
+	
+	.contestForm {
+		height: 900px;
+	}
+}
