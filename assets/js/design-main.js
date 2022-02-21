@@ -48,6 +48,30 @@ const timeline = [
 		title: "Mamak sevdası"
 	},
 	{
+		year: 2021,
+		month: 05,
+		month_name: "Haziran 2021",
+		title: "Reddedemeyeceği teklif"
+	},
+	{
+		year: 2021,
+		month: 07,
+		month_name: "Temmuz 2021",
+		title: "Ballı kahve"
+	},
+	{
+		year: 2021,
+		month: 11,
+		month_name: "Kasım 2021",
+		title: "Nişan halayı"
+	},
+	{
+		year: 2022,
+		month: 05,
+		month_name: "Mayıs 2022",
+		title: "Yüksek tepeler"
+	},
+	{
 		year: 2022,
 		month: 05,
 		month_name: "Mayıs 2022",
