@@ -42,6 +42,18 @@ const timeline = [
 		title: "Amerika sevdası"
 	},
 	{
+		year: 2018,
+		month: 05,
+		month_name: "Mayıs 2018",
+		title: "Erkeğin okula vedası"
+	},
+	{
+		year: 2019,
+		month: 05,
+		month_name: "Mayıs 2019",
+		title: "Kızın okula vedası"
+	},
+	{
 		year: 2020,
 		month: 06,
 		month_name: "Haziran 2020",
