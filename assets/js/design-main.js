@@ -49,8 +49,14 @@ const timeline = [
 	},
 	{
 		year: 2019,
-		month: 05,
-		month_name: "Mayıs 2019",
+		month: 01,
+		month_name: "Ocak 2019",
+		title: "Kızın ilk bölüme vedası"
+	},
+	{
+		year: 2019,
+		month: 09,
+		month_name: "Eylül 2019",
 		title: "Kızın okula vedası"
 	},
 	{
